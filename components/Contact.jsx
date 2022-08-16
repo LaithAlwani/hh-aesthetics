@@ -22,7 +22,7 @@ export default function Contact() {
   };
   return (
     <>
-      <h2>Let's Get in Touch</h2>
+      <h2>Contact Us</h2>
       <div className="card">
         <div className="contact-icons">
           <MdOutlineLocationOn />
