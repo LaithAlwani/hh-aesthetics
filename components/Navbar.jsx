@@ -26,15 +26,10 @@ export default function Navbar() {
           <span onClick={toggleMenu}>
             <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
           </span>
-          <div
-            onClick={handleClick}
-            className={
-              isOpen ? "mobile-nav-links open-nav" : "mobile-nav-links"
-            }
-          >
-            {<NavLinks />}
-          </div>
         </div>
+      </div>
+      <div className={isOpen ? "mobile-nav-links open-nav" : "mobile-nav-links"}>
+        <NavLinks />
       </div>
     </nav>
   );

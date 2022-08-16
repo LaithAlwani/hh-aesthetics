@@ -6,7 +6,6 @@ import About from "../components/About";
 import Services from "../components/Services";
 import Contact from "../components/Contact";
 
-
 export default function Home() {
   return (
     <div id="app">
@@ -19,14 +18,16 @@ export default function Home() {
         <div className="hero" id="hero">
           <Hero />
         </div>
-        <div className="about section" id="about">
-          <About />
-        </div>
-        <div className="services section" id="services">
-          <Services />
-        </div>
-        <div className="section" id="contact">
-          <Contact />
+        <div className="gradient">
+          <div className="about section" id="about">
+            <About />
+          </div>
+          <div className="services section" id="services">
+            <Services />
+          </div>
+          <div className="section" id="contact">
+            <Contact />
+          </div>
         </div>
       </Layout>
     </div>
