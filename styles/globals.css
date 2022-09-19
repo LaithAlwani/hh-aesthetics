@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+:root {
+  --hh-black:#333;
+  --queen-blue: #416788;
+  --shadow-blue: #7389ae;
+  --cadet-blue: #b5bad0;
+  --hh-white:#f2f2f2;
+  --border-radius: 0.5rem;
+}
 
 
 html {
@@ -8,8 +16,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #444;
-  background-color: #efefef;
+  color: var(--hh-black);
+  background-color: var(--hh-white);
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

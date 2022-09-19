@@ -14,11 +14,11 @@ export default function Navbar() {
   return (
     <nav>
       <div className="nav-container">
-        <div>
-          <a href="#app">
-            <img src="/images/logo.png" alt="logo" className="logo" />
-          </a>
-        </div>
+        <a href="#app">
+          <img src="/images/logo.png" alt="logo" className="logo" />
+          <span>Aesthetics</span>
+        </a>
+
         <div className="links">
           <NavLinks />
         </div>

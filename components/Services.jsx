@@ -1,11 +1,11 @@
-import Card from "./Card";
+
 
 
 export default function Services() {
   return (
     <>
       <h2>Services</h2>
-      <Card>
+      <div className="card">
         <div className="img-container">
           <img src="/images/botox.jpg" alt="botox" />
         </div>
@@ -16,8 +16,8 @@ export default function Services() {
             wrinkles, and add volume to lips and other facial areas.
           </p>
         </div>
-      </Card>
-      <Card>
+      </div>
+      <div className="card">
         <div className="img-container">
           <img src="/images/lhr.png" alt="laser treatments" />
         </div>
@@ -28,8 +28,8 @@ export default function Services() {
             aging, with no downtime!
           </p>
         </div>
-      </Card>
-      <Card>
+      </div>
+      <div className="card">
         <div className="img-container">
           <img src="/images/lhr2.jpeg" alt="laser hair removal" />
         </div>
@@ -40,7 +40,7 @@ export default function Services() {
             permanent solution to removing unwanted hair.
           </p>
         </div>
-      </Card>
+      </div>
     </>
   );
 }

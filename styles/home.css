@@ -1,16 +1,9 @@
-:root {
-  --queen-blue: #416788;
-  --shadow-blue: #7389ae;
-  --cadet-blue: #b5bad0;
-  --white:white;
-  --border-radius: 0.5rem;
-}
 
-.main {
+main {
   min-height: 100vh;
   max-width: 960px;
   margin: 0 auto;
-  padding: 5rem 1rem 1rem;
+  padding: 8rem 1rem 1rem;
 }
 .section {
   padding: 4rem 0 0;
@@ -26,8 +19,8 @@ nav {
   top: 0;
   width: 100%;
   padding: 0.5rem;
-  background: #efefef;
-  color: var(--queen-blue);
+  background: #f2f2f2;
+  color: var(--hh-black);
 }
 
 nav .nav-container{
@@ -40,6 +33,15 @@ nav .nav-container{
 
 nav a {
   margin: 0.5rem;
+  font-size: 1.2em;
+}
+
+nav span{ 
+  display: block;
+  text-align: center;
+  padding-left: 0.3em;
+  font-size: 1.2em;
+  color: gray;
 }
 
 nav .mobile-nav{
@@ -53,7 +55,7 @@ nav .mobile-nav-links {
   flex-direction: column;
   align-items: flex-start;
   overflow: hidden;
-  background-color: #efefef;
+  background-color: #f2f2f2;
   transition: all 0.5s ease-in-out;
   height: 0px;
 }
@@ -84,7 +86,7 @@ nav .open-nav {
 .menu-btn-icon {
   width: 100%;
   height: 0.1rem;
-  background-color: var(--queen-blue);
+  background-color: var(--hh-black);
   border-radius: 0.5rem;
   transition: all 0.5s ease-in-out;
 }
@@ -92,9 +94,10 @@ nav .open-nav {
 .menu-btn-icon::after {
   content: "";
   position: absolute;
+  left: 0;
   width: 100%;
   height: 0.1rem;
-  background-color: var(--queen-blue);
+  background-color: var(--hh-black);
   border-radius: 0.5rem;
   transition: all 0.5s ease-in-out;
 }
@@ -123,15 +126,19 @@ nav .open-nav {
 .hero {
   width: 100%;
   background-image: url("/../images/hero.jpg");
-  height: 300px;
+  height: 40vh;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0.5rem;
+  position: relative;
+  z-index: -1;
 }
 .overlay {
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 20%;
   background-color: rgba(0, 0, 0, 0.413);
   display: flex;
   justify-content: center;
@@ -223,7 +230,7 @@ button {
   padding: 0.5rem;
   font-weight: bold;
   background-color: var(--queen-blue);
-  color: var(--white);
+  color: var(--hh-white);
   outline: none;
   border-radius: var(--border-radius);
   border: 1px solid var(--cadet-blue);
@@ -233,7 +240,7 @@ button {
 /*footer*/
 footer {
   background: var(--queen-blue);
-  color: var(--white);
+  color: var(--hh-white);
   text-align: center;
   padding: 0.5rem 0;
   border-top: 1px solid var(--cadet-blue);
@@ -251,7 +258,7 @@ footer span {
 
 /*media quries*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 48em) {
   nav .mobile-nav{
     display: flex;
     
@@ -267,6 +274,7 @@ footer span {
 
   .card .img-container {
     width: 100%;
+    padding: 1em;
   }
   .card img {
     border-radius: var(--border-radius) var(--border-radius) 0 0;

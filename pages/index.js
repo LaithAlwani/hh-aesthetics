@@ -1,10 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
-import Layout from "../components/Layout";
-import Hero from "../components/Hero";
 import About from "../components/About";
 import Services from "../components/Services";
 import Contact from "../components/Contact";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -12,11 +11,16 @@ export default function Home() {
       <Head>
         <title>HH Aesthetics</title>
         <meta name="description" content="Botox, plastic surgery and laser hair removal" />
-        <link rel="icon" href="/ico-tpbg.png" />
+        <link rel="icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+        <link rel="android-touch-icon" href="/favicon.png" />
       </Head>
-      <Layout>
+      <Navbar />
+      <main>
         <div className="hero" id="hero">
-          <Hero />
+          <div className="overlay">
+            <h1>Beautiful skin starts here</h1>
+          </div>
         </div>
         <div className="gradient">
           <div className="about section" id="about">
@@ -29,7 +33,8 @@ export default function Home() {
             <Contact />
           </div>
         </div>
-      </Layout>
+      </main>
+      <Footer />
     </div>
   );
 }
