@@ -7,7 +7,7 @@ export default function Services() {
       <h2>Services</h2>
       <div className="card">
         <div className="img-container">
-          <img src="/images/botox.jpg" alt="botox" />
+          <img src="/images/botox.jpg" alt="botox" loading="lazy"/>
         </div>
         <div  className="card-content">
           <h3>BOTOX & DERMAL FILLERS</h3>
@@ -19,7 +19,7 @@ export default function Services() {
       </div>
       <div className="card">
         <div className="img-container">
-          <img src="/images/lhr.png" alt="laser treatments" />
+          <img src="/images/lhr.png" alt="laser treatments" loading="lazy" />
         </div>
         <div className="card-content">
           <h3>LASER SKIN TREATMENTS</h3>
@@ -31,7 +31,7 @@ export default function Services() {
       </div>
       <div className="card">
         <div className="img-container">
-          <img src="/images/lhr2.jpeg" alt="laser hair removal" />
+          <img src="/images/lhr2.jpeg" alt="laser hair removal" loading="lazy" />
         </div>
         <div  className="card-content">
           <h3>LASER HAIR REMOVAL</h3>
