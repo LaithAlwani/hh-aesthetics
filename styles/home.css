@@ -33,15 +33,13 @@ nav .nav-container{
 
 nav a {
   margin: 0.5rem;
-  font-size: 1.2em;
 }
 
 nav span{ 
   display: block;
   text-align: center;
   padding-left: 0.3em;
-  font-size: 1.2em;
-  color: gray;
+  color: rgb(100, 100, 100);
 }
 
 nav .mobile-nav{
