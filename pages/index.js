@@ -10,10 +10,11 @@ export default function Home() {
     <div id="app">
       <Head>
         <title>HH Aesthetics</title>
-        <meta name="description" content="Botox, plastic surgery and laser hair removal" />
+        <meta name="description" content="Beatutiful Skin Starts here. Botox, plastic surgery and laser hair removal" />
         <link rel="icon" href="/favicon.png" />
-        <link rel="apple-touch-icon" href="/favicon.png" />
-        <link rel="android-touch-icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/images/logo-min.png" />
+        <link rel="android-touch-icon" href="/images/logo-min.png" />
+        <link rel="mask-icon" href="/images/logo-min.png" color="#5bbad5"></link>
       </Head>
       <Navbar />
       <main>
