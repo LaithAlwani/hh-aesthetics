@@ -20,6 +20,7 @@ export default function Contact() {
     setEmail("");
     setMessage("");
   };
+  
   return (
     <>
       <h2>Contact Us</h2>

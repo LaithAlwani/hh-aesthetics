@@ -27,6 +27,7 @@ export default function Home() {
           <div className="about section" id="about">
             <About />
           </div>
+          <hr />
           <div className="services section" id="services">
             <Services />
           </div>
