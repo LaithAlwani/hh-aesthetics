@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div id="app">
       <Head>
-        <title>Health Haven Aesthetics</title>
+        <title>Health Haven Aesthetics - Beautiful Skin Starts Here!</title>
         <meta
           name="description"
           content="Beautiful Skin Starts at Health Haven. Botox Dermal fillers, 
