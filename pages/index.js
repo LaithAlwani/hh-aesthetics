@@ -15,7 +15,7 @@ export default function Home() {
         <title>HH Aesthetics</title>
         <meta
           name="description"
-          content="Beatutiful Skin Starts here. Botox, plastic surgery and laser hair removal"
+          content="Beatutiful Skin Starts at Health Haven. Botox, plastic surgery and laser hair removal"
         />
         <link rel="icon" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/images/logo-min.png" />
@@ -26,6 +26,7 @@ export default function Home() {
       <Navbar />
       <Banner />
       <main>
+      <h1><em>Beauty start at Health Haven</em></h1>
         <About />
         <hr />
         <Services />
