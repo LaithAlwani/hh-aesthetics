@@ -15,9 +15,7 @@ export default function Navbar() {
       <div className="nav-container">
         <a href="#app" className="logo-container" onClick={toggleMenu}>
           <Image src="/images/logo.png" alt="logo" className="logo" width={125} height={50} />
-          {/* <em>Aesthetics</em> */}
         </a>
-
         <div className="links">
           <NavLinks />
         </div>

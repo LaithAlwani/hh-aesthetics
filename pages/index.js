@@ -3,7 +3,6 @@ import About from "../components/About";
 import Services from "../components/Services";
 import Contact from "../components/Contact";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import { Banner } from "../components/Banner";
 import { Toaster } from "react-hot-toast";
 
@@ -33,7 +32,9 @@ export default function Home() {
         <Services />
         <Contact />
       </main>
-      <Footer />
+      <footer>
+        <span>Health Haven Asthetics &copy; 2022</span>
+      </footer>
     </div>
   );
 }
