@@ -11,7 +11,7 @@ export default function Services() {
         <div className="card-content">
           <h3>BOTOX & DERMAL FILLERS</h3>
           <p>
-            Our skilled medical professionals at Health Haven Aesthetics Clinic specialize in Botox
+            Our skilled medical professionals at Health Haven Esthetics Clinic specialize in Botox
             and dermal filler treatments. Botox is a popular choice for minimizing the appearance of
             wrinkles and fine lines, while dermal fillers can add volume to your lips and facial
             areas, resulting in a youthful and refreshed look. We understand that each individual is
@@ -44,7 +44,7 @@ export default function Services() {
           <h3>LASER HAIR REMOVAL</h3>
           <p>
             Say goodbye to unwanted hair with our laser hair removal services. At Health Haven
-            Aesthetics Clinic, we use state-of-the-art laser technology to target and permanently
+            Esthetics Clinic, we use state-of-the-art laser technology to target and permanently
             reduce hair in various areas of the body. Our experienced technicians ensure your
             comfort throughout the process, and you can look forward to smooth, hair-free skin
             without the hassle of regular shaving or waxing.

@@ -3,7 +3,7 @@ export default function About() {
     <div className="small-container section" id="about">
       <h2>About</h2>
       <p>
-        At Health Haven Aesthetics Clinic, with over 15 years of experience, we are passionately
+        At Health Haven Esthetics Clinic, with over 15 years of experience, we are passionately
         committed to helping you achieve your beauty and wellness goals. Our state-of-the-art
         facility offers a comprehensive range of services designed to enhance your natural beauty
         and rejuvenate your skin. Whether you are looking for subtle enhancements with Botox and
