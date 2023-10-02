@@ -1,6 +1,7 @@
 import { useState } from "react";
 import MenuButton from "./MenuButton";
 import NavLinks from "./NavLinks";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,8 +16,8 @@ export default function Navbar() {
     <nav>
       <div className="nav-container">
         <a href="#app" className="logo-container" onClick={()=>setIsOpen(!open)}>
-          <img src="/images/logo.png" alt="logo" className="logo" />
-          <em>Aesthetics</em>
+          <Image src="/images/logo.png" alt="logo" className="logo" width={100} height={40} />
+          {/* <em>Aesthetics</em> */}
         </a>
 
         <div className="links">

@@ -2,14 +2,10 @@ main {
   min-height: 100vh;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 7em 1em 1em;
+  padding: 1em;
 }
 .section {
   padding: 5rem 0 0;
-}
-
-.bold {
-  font-weight: 500;
 }
 
 /*Navbar */
@@ -18,8 +14,9 @@ nav {
   top: 0;
   width: 100%;
   padding: 0.5rem;
-  background: var(--queen-blue);
-  color: var(--hh-white);
+  background: var(--hh-white);
+  color: var(--hh-black);
+  z-index: 1;
 }
 
 nav .nav-container{
@@ -53,7 +50,6 @@ nav .mobile-nav-links {
   flex-direction: column;
   align-items: flex-start;
   overflow: hidden;
-  /* background-color: #f2f2f2; */
   transition: all 0.5s ease-in-out;
   height: 0px;
 }
@@ -89,7 +85,7 @@ nav .open-nav {
   height: 0.1rem;
   border-radius: 0.5rem;
   transition: all 0.5s ease-in-out;
-  background-color: var(--hh-white);
+  background-color: var(--hh-black);
 }
 .menu-btn-icon::before,
 .menu-btn-icon::after {
@@ -99,8 +95,8 @@ nav .open-nav {
   width: 100%;
   height: 0.1rem;
   border-radius: 0.5rem;
-  background-color: var(--hh-white);
-  transition: all 0.5s ease-in-out;
+  background-color: var(--hh-black);
+  transition: all 0.25s ease-in-out;
 }
 
 .menu-btn-icon::before {
@@ -121,38 +117,38 @@ nav .open-nav {
   transform: rotate(-45deg) translate(-0.5rem, -0.5rem);
 }
 
-
-
-/*hero*/
-.hero {
+/*banner*/
+.banner{
   width: 100%;
+  background-color: var(--queen-blue);
+  height: 18rem;
+  margin-top: 7rem;
   background-image: url("/../images/hero.jpg");
-  height: 30vh;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 0.5rem;
+  background-position: top;
+}
+.banner-wrapper{
   position: relative;
-  z-index: -1;
-}
-.overlay {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 20%;
-  background-color: rgba(0, 0, 0, 0.413);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0 0 0.5rem 0.5rem;
-}
+  margin-inline: auto;
+  height: 100%;
+  max-width: 1440px;
 
-.hero h1 {
-  /* font-size: 1.5rem; */
-  color: white;
-  text-align: center;
 }
-/*hero Ends*/
+.banner hgroup {
+  color: var(--hh-white);
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+.banner hgroup *{
+  margin: 0;
+  text-shadow: 1px 1px 5px var(--queen-blue);
+}
+.banner hgroup a{
+  text-decoration: underline;
+}
+/*banner ends*/
 
 /*About*/
 .about{

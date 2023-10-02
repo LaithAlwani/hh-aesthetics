@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function Services() {
   return (
-    <>
+    <div className="services section" id="services">
       <h2>Services</h2>
       <div className="card">
         <div className="img-container">
-          <img src="/images/botox.jpg" alt="botox"  />
+          <Image src="/images/botox.jpg" alt="botox" width={100} height={100} quality={100}/>
         </div>
         <div className="card-content">
           <h3>BOTOX & DERMAL FILLERS</h3>
@@ -33,12 +33,12 @@ export default function Services() {
           </p>
         </div>
         <div className="img-container">
-          <img src="/images/lhr.png" alt="laser treatments" loading="lazy" />
+          <Image src="/images/lhr.png" alt="laser treatments" width={100} height={100} quality={100}/>
         </div>
       </div>
       <div className="card">
         <div className="img-container">
-          <img src="/images/lhr2.jpeg" alt="laser hair removal" loading="lazy" />
+          <Image src="/images/lhr2.jpeg" alt="laser hair removal" width={100} height={100} quality={100}/>
         </div>
         <div className="card-content">
           <h3>LASER HAIR REMOVAL</h3>
@@ -51,6 +51,6 @@ export default function Services() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
