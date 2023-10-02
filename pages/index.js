@@ -5,6 +5,7 @@ import Contact from "../components/Contact";
 import Navbar from "../components/Navbar";
 import { Banner } from "../components/Banner";
 import { Toaster } from "react-hot-toast";
+import { WhyChoose } from "../components/WhyChoose";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
         <About />
         <hr />
         <Services />
+        <WhyChoose />
         <Contact />
       </main>
       <footer>

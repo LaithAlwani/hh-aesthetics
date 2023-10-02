@@ -25,7 +25,7 @@ export default function Services() {
           <h3>LASER SKIN TREATMENTS</h3>
           <p>
             Our clinic offers a wide range of laser skin treatments to address various skin
-            concerns. Whether you&apos;re seeking to rejuvenate your skin&apos;s texture, reduce acne scars,
+            concerns. Whether you are seeking to rejuvenate your skin&apos;s texture, reduce acne scars,
             eliminate sun damage, or even out your skin tone, our advanced laser therapies can help
             you achieve your desired results. Our team of skilled practitioners uses cutting-edge
             technology and a personalized approach to provide safe and effective treatments that
