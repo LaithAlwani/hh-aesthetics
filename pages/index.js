@@ -1,9 +1,9 @@
 import Head from "next/head";
+import Image from "next/image";
 import About from "../components/About";
 import Services from "../components/Services";
 import Contact from "../components/Contact";
 import Navbar from "../components/Navbar";
-import { Banner } from "../components/Banner";
 import { Toaster } from "react-hot-toast";
 import { WhyChoose } from "../components/WhyChoose";
 
@@ -25,7 +25,11 @@ export default function Home() {
       </Head>
       <Toaster />
       <Navbar />
-      <Banner />
+      <div className="banner-wrapper" id="banner">
+      <div className="img-wrapper">
+        <Image src={"/images/hero.jpg"} priority fill objectFit="cover" objectPosition="center" alt="hero-image"/>
+      </div>
+    </div>
       <main>
         <h1>
           <em>Beauty start at Health Haven</em>
