@@ -9,14 +9,12 @@ export default function Navbar() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const handleClick = () => {
-    toggleMenu();
-  };
+  
   return (
     <nav>
       <div className="nav-container">
-        <a href="#app" className="logo-container" onClick={()=>setIsOpen(!open)}>
-          <Image src="/images/logo.png" alt="logo" className="logo" width={100} height={40} />
+        <a href="#app" className="logo-container" onClick={toggleMenu}>
+          <Image src="/images/logo.png" alt="logo" className="logo" width={125} height={50} />
           {/* <em>Aesthetics</em> */}
         </a>
 

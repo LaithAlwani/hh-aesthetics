@@ -13,13 +13,13 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 0.5rem;
+  padding: 1rem;
   background: var(--hh-white);
   color: var(--hh-black);
   z-index: 1;
 }
 
-nav .nav-container{
+nav .nav-container {
   max-width: 1080px;
   margin: 0 auto;
   display: flex;
@@ -28,18 +28,12 @@ nav .nav-container{
 }
 
 nav a {
-  margin: 0.5rem;
-  padding: 0.5em;
+  margin: 0.25rem;
+  padding: 1em;
+  font-weight: 500;
 }
 
-
-nav em{ 
-  display: block;
-  text-align: center;
-  padding-left: 0.3em;
-}
-
-nav .mobile-nav{
+nav .mobile-nav {
   display: none;
   flex-direction: column;
   align-items: flex-end;
@@ -57,13 +51,12 @@ nav .mobile-nav-links {
 nav .open-nav {
   height: 10em;
 }
-.logo-container{
+
+.logo-container {
   padding: 0;
   margin: 0;
 }
-.logo {
-  max-width: 7em;
-}
+
 .active {
   font-size: large;
   font-weight: bold;
@@ -118,29 +111,28 @@ nav .open-nav {
 }
 
 /*banner*/
-.banner-wrapper{
+.banner-wrapper {
   width: 100%;
   height: 20rem;
-  margin-top: 5rem;
+  margin-top: 5.3rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
 
-.banner-wrapper .img-wrapper{
+.banner-wrapper .img-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: aquamarine;
-
 }
-.banner img{
+
+.banner img {
   height: 10rem;
 }
 /*banner ends*/
 
 /*About*/
-.about{
+.about {
   max-width: 768px;
   margin-inline: auto;
   text-align: center;
@@ -148,10 +140,25 @@ nav .open-nav {
 }
 
 /*About Ends*/
-
-main h1{
+main h1 {
   text-align: center;
 }
+
+main h1 em {
+  position: relative;
+  margin-inline: auto;
+  text-shadow: 1px 1px 2px var(--cadet-blue);
+}
+
+main h1 em::after {
+    position: absolute;
+    content: " ";
+    bottom: 0.3rem;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--queen-blue);
+  }
 
 /*Services*/
 .card {
@@ -180,7 +187,7 @@ main h1{
   width: 50%;
 }
 
-.card .card-content li span{
+.card .card-content li span {
   font-weight: bold;
 }
 
@@ -227,7 +234,7 @@ textarea {
   font-family: "roboto", sans-serif;
 }
 button {
-  padding: 0.5rem;
+  padding: 1rem;
   font-weight: bold;
   background-color: var(--queen-blue);
   color: var(--hh-white);
@@ -242,7 +249,7 @@ footer {
   background: var(--queen-blue);
   color: var(--hh-white);
   text-align: center;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   border-top: 1px solid var(--cadet-blue);
 }
 
@@ -259,19 +266,20 @@ footer span {
 /*media quries*/
 
 @media screen and (max-width: 48em) {
-  nav a{
+  nav a {
     padding-left: 0.8em;
+    padding-block: 0.5em;
   }
-  nav .mobile-nav{
+  nav .mobile-nav {
     display: flex;
-    
   }
   nav .links {
     display: none;
   }
-  .main h1{
-    font-size: 1.5rem;
+  main h1 {
+    font-size: 1.8rem;
   }
+  
   .card {
     flex-direction: column;
     align-items: center;

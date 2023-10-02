@@ -34,6 +34,7 @@ code {
 /*global styles*/
 h2, h3{
   color: #666;
+  text-transform: uppercase;
 }
 h3{
   font-size: 1.2rem;
