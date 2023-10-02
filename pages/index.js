@@ -10,10 +10,12 @@ export default function Home() {
   return (
     <div id="app">
       <Head>
-        <title>HH Aesthetics</title>
+        <title>Health Haven Aesthetics</title>
         <meta
           name="description"
-          content="Beatutiful Skin Starts at Health Haven. Botox Dermal fillers, laser skin treatment and laser hair removal"
+          content="Beautiful Skin Starts at Health Haven. Botox Dermal fillers, 
+          laser skin treatment and laser hair removal, 
+          with over 15 years of experience, we are passionately committed to helping you achieve your beauty and wellness goals"
         />
         <link rel="icon" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/images/logo-min.png" />
