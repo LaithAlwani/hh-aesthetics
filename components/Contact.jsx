@@ -36,7 +36,7 @@ export default function Contact() {
   return (
     <div className="section" id="contact">
       <h2>Contact Us</h2>
-      <div className="card">
+      <div className="card no-border">
         <div className="contact-icons">
           <MdOutlineLocationOn />
           <p>

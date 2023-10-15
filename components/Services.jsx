@@ -6,7 +6,7 @@ export default function Services() {
       <h2>Services</h2>
       <div className="card">
         <div className="img-container">
-          <Image src="/images/botox.jpg" alt="botox" width={100} height={100} quality={100}/>
+          <Image src="/images/botox.webp" alt="botox" layout="fill" objectFit="" objectPosition=""/>
         </div>
         <div className="card-content">
           <h3>BOTOX & DERMAL FILLERS</h3>
@@ -33,12 +33,12 @@ export default function Services() {
           </p>
         </div>
         <div className="img-container">
-          <Image src="/images/lhr.png" alt="laser treatments" width={100} height={100} quality={100}/>
+          <Image src="/images/lhr.webp" alt="laser treatments" layout="fill" objectFit="" objectPosition="" />
         </div>
       </div>
       <div className="card">
         <div className="img-container">
-          <Image src="/images/lhr2.jpeg" alt="laser hair removal" width={100} height={100} quality={100}/>
+          <Image src="/images/lhr2.webp" alt="laser hair removal" layout="fill" objectFit="" objectPosition=""/>
         </div>
         <div className="card-content">
           <h3>LASER HAIR REMOVAL</h3>

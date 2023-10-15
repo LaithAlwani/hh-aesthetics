@@ -1,6 +1,4 @@
-import React from "react";
-
-export const WhyChoose = () => {
+export default function WhyChoose () {
   return (
     <div className="small-container section">
       <h2>Why Choose Health Haven Esthetics Clinic?</h2>

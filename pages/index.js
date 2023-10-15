@@ -1,11 +1,13 @@
 import Head from "next/head";
+import dynamic from "next/dynamic";
 import Image from "next/image";
-import About from "../components/About";
-import Services from "../components/Services";
-import Contact from "../components/Contact";
-import Navbar from "../components/Navbar";
 import { Toaster } from "react-hot-toast";
-import { WhyChoose } from "../components/WhyChoose";
+
+const Navbar = dynamic(() => import('../components/Navbar'));
+const About = dynamic(()=> import('../components/About'));
+const Services = dynamic(() => import('../components/Services'));
+const WhyChoose = dynamic(()=> import('../components/WhyChoose'));
+const Contact = dynamic(() => import('../components/Contact'));
 
 export default function Home() {
   return (
@@ -27,7 +29,7 @@ export default function Home() {
       <Navbar />
       <div className="banner-wrapper" id="banner">
       <div className="img-wrapper">
-        <Image src={"/images/hero.jpg"} priority fill objectFit="cover" objectPosition="center" alt="hero-image"/>
+        <Image src={"/images/hero.webp"} priority fill objectFit="cover" objectPosition="center" alt="hero-image"/>
       </div>
     </div>
       <main>
@@ -38,6 +40,7 @@ export default function Home() {
         <hr />
         <Services />
         <WhyChoose />
+        <hr />
         <Contact />
       </main>
       <footer>

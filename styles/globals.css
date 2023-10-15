@@ -35,6 +35,8 @@ code {
 h2, h3{
   color: #666;
   text-transform: uppercase;
+  text-align: center;
+  font-size: 1.75rem;
 }
 h3{
   font-size: 1.2rem;

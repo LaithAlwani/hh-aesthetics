@@ -154,21 +154,12 @@ main h1 em {
   text-shadow: 1px 1px 2px var(--cadet-blue);
 }
 
-main h1 em::after {
-    position: absolute;
-    content: " ";
-    bottom: 0.3rem;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: var(--queen-blue);
-  }
-
 /*Services*/
 .card {
   width: 100%;
   display: flex;
   justify-content: center;
+  gap: 1rem;
   border: 1px solid var(--cadet-blue);
   margin: 1rem 0;
   border-radius: var(--border-radius);
@@ -176,8 +167,10 @@ main h1 em::after {
 }
 
 .card .img-container {
+  position: relative;
   padding: 0;
   width: 50%;
+  min-height: 300px;
 }
 
 .card img {
@@ -202,6 +195,10 @@ main h1 em::after {
   font-size: 2rem;
 }
 
+.card.no-border{
+  border: none;
+}
+
 .contact-icons {
   display: flex;
   flex-direction: column;
@@ -221,7 +218,6 @@ main h1 em::after {
   flex-direction: column;
   margin: 0 auto;
   max-width: 600px;
-  padding: 1rem;
 }
 
 input,
