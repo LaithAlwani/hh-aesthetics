@@ -14,8 +14,8 @@ export default function Navbar() {
   return (
     <nav>
       <div className="nav-container">
-        <a href="#app" className="logo-container" onClick={()=>toggleMenu('home')}>
-          <Image src="/images/logo.webp" alt="logo" className="logo" width={125} height={50} />
+        <a href="#app" className="img-container" onClick={()=>toggleMenu('home')}>
+          <Image src="/images/logo.webp" priority alt="logo" layout="fill"  objectFit="contain"  />
         </a>
         <div className="links">
           <NavLinks />

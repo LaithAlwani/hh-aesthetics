@@ -31,6 +31,9 @@ nav a {
   margin: 0.25rem;
   padding: 1em;
   font-weight: 500;
+  position: relative;
+  width: 125px;
+  height: 45px;
 }
 
 nav .mobile-nav {
@@ -52,10 +55,6 @@ nav .open-nav {
   height: 10em;
 }
 
-.logo-container {
-  padding: 0;
-  margin: 0;
-}
 
 .active {
   font-size: large;
@@ -113,6 +112,8 @@ nav .open-nav {
 /*banner*/
 .banner-wrapper {
   width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
   height: 20rem;
   margin-top: 5.3rem;
   background-repeat: no-repeat;
@@ -177,6 +178,7 @@ main h1 em {
   border-radius: var(--border-radius) 0 0 var(--border-radius);
   height: 100%;
   width: 100%;
+  padding: 0.5rem;
 }
 .card .card-content {
   border-radius: 0 0.5rem 0.5rem 0;

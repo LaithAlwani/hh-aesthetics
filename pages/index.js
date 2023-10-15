@@ -2,12 +2,13 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { Toaster } from "react-hot-toast";
+import Navbar from "../components/Navbar";
 
-const Navbar = dynamic(() => import('../components/Navbar'));
-const About = dynamic(()=> import('../components/About'));
-const Services = dynamic(() => import('../components/Services'));
-const WhyChoose = dynamic(()=> import('../components/WhyChoose'));
-const Contact = dynamic(() => import('../components/Contact'));
+// const Navbar = dynamic(() => import("../components/Navbar"));
+const About = dynamic(() => import("../components/About"));
+const Services = dynamic(() => import("../components/Services"));
+const WhyChoose = dynamic(() => import("../components/WhyChoose"));
+const Contact = dynamic(() => import("../components/Contact"));
 
 export default function Home() {
   return (
@@ -28,10 +29,17 @@ export default function Home() {
       <Toaster />
       <Navbar />
       <div className="banner-wrapper" id="banner">
-      <div className="img-wrapper">
-        <Image src={"/images/hero.webp"} priority fill objectFit="cover" objectPosition="center" alt="hero-image"/>
+        <div className="img-wrapper">
+          <Image
+            src={"/images/hero.webp"}
+            priority
+            fill
+            objectFit="cover"
+            objectPosition="top"
+            alt="hero-image"
+          />
+        </div>
       </div>
-    </div>
       <main>
         <h1>
           <em>Beauty start at Health Haven</em>
